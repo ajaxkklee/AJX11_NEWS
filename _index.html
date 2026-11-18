@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AJX11 NEWS · 준비 중</title>
+  <meta name="description" content="업계 키워드를 등록하면 키워드별 최신 뉴스를 한 화면에 모아 보여주는 서비스, AJX11 NEWS가 준비 중입니다." />
+  <style>
+    :root {
+      --bg: #f6f7f9;
+      --card: #ffffff;
+      --text: #16181d;
+      --muted: #5f6672;
+      --line: #e3e6eb;
+      --accent: #2f5bea;
+      --accent-soft: #e8eefe;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111317;
+        --card: #1a1d23;
+        --text: #eceef2;
+        --muted: #9aa1ad;
+        --line: #2a2e36;
+        --accent: #7b9bff;
+        --accent-soft: #1f2a4a;
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 16px;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard", "Noto Sans KR", "Segoe UI", sans-serif;
+      line-height: 1.6;
+      word-break: keep-all;
+    }
+    main {
+      width: 100%;
+      max-width: 560px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 40px 32px;
+      text-align: center;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .dot {
+      width: 8px; height: 8px; border-radius: 50%;
+      background: var(--accent);
+      animation: pulse 1.6s ease-in-out infinite;
+    }
+    @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: .3; } }
+    @media (prefers-reduced-motion: reduce) { .dot { animation: none; } }
+    h1 {
+      margin-top: 20px;
+      font-size: 32px;
+      letter-spacing: -0.02em;
+    }
+    .lead {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 16px;
+    }
+    .features {
+      margin-top: 28px;
+      list-style: none;
+      display: grid;
+      gap: 10px;
+      text-align: left;
+    }
+    .features li {
+      display: flex;
+      gap: 12px;
+      padding: 14px 16px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      font-size: 15px;
+    }
+    .features .num {
+      flex: none;
+      color: var(--accent);
+      font-weight: 700;
+    }
+    .preview {
+      margin-top: 24px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+    }
+    .chip {
+      padding: 4px 10px;
+      border: 1px dashed var(--line);
+      border-radius: 999px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    footer {
+      margin-top: 24px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 480px) {
+      main { padding: 32px 20px; }
+      h1 { font-size: 26px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="badge"><span class="dot" aria-hidden="true"></span>서비스 준비 중</span>
+    <h1>AJX11 NEWS</h1>
+    <p class="lead">
+      내 업계 키워드를 등록해 두면<br />
+      키워드별 최신 뉴스를 한 화면에 모아 보여드릴게요.
+    </p>
+
+    <ul class="features">
+      <li><span class="num">01</span><span>관심 있는 업계 키워드를 등록하고 관리</span></li>
+      <li><span class="num">02</span><span>키워드마다 최신 뉴스를 자동으로 수집</span></li>
+      <li><span class="num">03</span><span>모든 키워드의 뉴스를 한 화면에서 확인</span></li>
+    </ul>
+
+    <div class="preview" aria-label="키워드 예시">
+      <span class="chip"># 반도체</span>
+      <span class="chip"># 2차전지</span>
+      <span class="chip"># 생성형 AI</span>
+      <span class="chip"># 핀테크</span>
+    </div>
+  </main>
+
+  <footer>열심히 만들고 있습니다. 곧 찾아뵐게요. &copy; 2026 AJX11 NEWS</footer>
+</body>
+</html>
